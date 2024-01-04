@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.hrms.LMS">
+      <class name="api.mahindra.loginAPI">
         <methods>
+          <include name="Test15_InvalidLogin"/>
           <include name="teardown"/>
           <include name="destroy"/>
+          <include name="Test14_InvalidLogin"/>
           <include name="init"/>
-          <include name="leaves_for_current_user"/>
         </methods>
-      </class> <!-- api.hrms.LMS -->
+      </class> <!-- api.mahindra.loginAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

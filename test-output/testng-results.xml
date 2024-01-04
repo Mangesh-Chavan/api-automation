@@ -1,144 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-07T17:26:20 IST" name="Default suite" finished-at="2023-07-07T17:26:27 IST" duration-ms="6921">
+  <suite started-at="2024-01-04T18:12:17 IST" name="Default suite" finished-at="2024-01-04T18:12:34 IST" duration-ms="16999">
     <groups>
     </groups>
-    <test started-at="2023-07-07T17:26:20 IST" name="Default test" finished-at="2023-07-07T17:26:27 IST" duration-ms="6921">
-      <class name="api.hrms.LMS">
-        <test-method is-config="true" signature="init()[pri:0, instance:api.hrms.LMS@42a48628]" started-at="2023-07-07T17:26:20 IST" name="init" finished-at="2023-07-07T17:26:21 IST" duration-ms="793" status="PASS">
+    <test started-at="2024-01-04T18:12:17 IST" name="Default test" finished-at="2024-01-04T18:12:34 IST" duration-ms="16999">
+      <class name="api.mahindra.loginAPI">
+        <test-method is-config="true" signature="init()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:17 IST" name="init" finished-at="2024-01-04T18:12:18 IST" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="leaves_for_current_user()[pri:0, instance:api.hrms.LMS@42a48628]" started-at="2023-07-07T17:26:21 IST" name="leaves_for_current_user" finished-at="2023-07-07T17:26:26 IST" duration-ms="5322" status="FAIL">
-          <exception class="javax.net.ssl.SSLHandshakeException">
+        <test-method signature="Test10_ValidateWebsite()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:18 IST" name="Test10_ValidateWebsite" finished-at="2024-01-04T18:12:24 IST" duration-ms="6539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test10_ValidateWebsite -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:24 IST" name="teardown" finished-at="2024-01-04T18:12:25 IST" duration-ms="438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test10_ValidateWebsite status=SUCCESS method=loginAPI.Test10_ValidateWebsite()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test11_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:25 IST" name="Test11_InvalidLogin" finished-at="2024-01-04T18:12:27 IST" duration-ms="2162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test11_InvalidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:27 IST" name="teardown" finished-at="2024-01-04T18:12:27 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test11_InvalidLogin status=SUCCESS method=loginAPI.Test11_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test12_InvalidLogin1()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:27 IST" name="Test12_InvalidLogin1" finished-at="2024-01-04T18:12:29 IST" duration-ms="2065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test12_InvalidLogin1 -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:29 IST" name="teardown" finished-at="2024-01-04T18:12:29 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test12_InvalidLogin1 status=SUCCESS method=loginAPI.Test12_InvalidLogin1()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test13_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:29 IST" name="Test13_InvalidLogin" finished-at="2024-01-04T18:12:30 IST" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test13_InvalidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:30 IST" name="teardown" finished-at="2024-01-04T18:12:30 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test13_InvalidLogin status=SUCCESS method=loginAPI.Test13_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test14_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:30 IST" name="Test14_InvalidLogin" finished-at="2024-01-04T18:12:31 IST" duration-ms="576" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <200>.
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
-at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:647)
-at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:467)
-at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:363)
-at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
-at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:469)
-at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
-at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
-at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
-at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
-at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
-at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
-at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
-at org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570)
-at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554)
-at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at api.hrms.LMS.leaves_for_current_user(LMS.java:17)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at api.mahindra.loginAPI.Test14_InvalidLogin(loginAPI.java:116)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -165,42 +151,133 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
-at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
-at java.base/sun.security.validator.Validator.validate(Validator.java:256)
-at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
-at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:631)
-... 142 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
-at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
-at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
-at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
-... 147 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- leaves_for_current_user -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:api.hrms.LMS@42a48628]" started-at="2023-07-07T17:26:26 IST" name="teardown" finished-at="2023-07-07T17:26:26 IST" duration-ms="42" status="PASS">
+        </test-method> <!-- Test14_InvalidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:31 IST" name="teardown" finished-at="2024-01-04T18:12:31 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=leaves_for_current_user status=FAILURE method=LMS.leaves_for_current_user()[pri:0, instance:api.hrms.LMS@42a48628] output={null}]]]>
+                <![CDATA[[TestResult name=Test14_InvalidLogin status=FAILURE method=loginAPI.Test14_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:api.hrms.LMS@42a48628]" started-at="2023-07-07T17:26:26 IST" name="destroy" finished-at="2023-07-07T17:26:27 IST" duration-ms="648" status="PASS">
+        <test-method signature="Test15_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:31 IST" name="Test15_InvalidLogin" finished-at="2024-01-04T18:12:32 IST" duration-ms="1355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at api.mahindra.loginAPI.Test15_InvalidLogin(loginAPI.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test15_InvalidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:32 IST" name="teardown" finished-at="2024-01-04T18:12:32 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test15_InvalidLogin status=FAILURE method=loginAPI.Test15_InvalidLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="Test16_validLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:32 IST" name="Test16_validLogin" finished-at="2024-01-04T18:12:33 IST" duration-ms="1534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test16_validLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:33 IST" name="teardown" finished-at="2024-01-04T18:12:33 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test16_validLogin status=SUCCESS method=loginAPI.Test16_validLogin()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a592c70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:api.mahindra.loginAPI@3c19aaa5]" started-at="2024-01-04T18:12:33 IST" name="destroy" finished-at="2024-01-04T18:12:34 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-      </class> <!-- api.hrms.LMS -->
+      </class> <!-- api.mahindra.loginAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

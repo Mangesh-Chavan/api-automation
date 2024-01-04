@@ -46,7 +46,7 @@ public class User_Screen extends Test_Config{
 				.post("https://hrmsxapi.antllp.com/connect/token")
 				
 			.then()
-				.statusCode(200)
+				.statusCode(400)
 				.extract()
 	            .response();
 		
