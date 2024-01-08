@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="api.mahindra.AddUser">
+        <methods>
+          <include name="Test625_validateAddUser"/>
+          <include name="teardown"/>
+          <include name="Test630_validateAddUser"/>
+          <include name="Test629_validateAddUser"/>
+          <include name="destroy"/>
+          <include name="Test632_validateAddUser"/>
+          <include name="Test628_validateAddUser"/>
+          <include name="Test631_validateAddUser"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- api.mahindra.AddUser -->
+      <class name="api.mahindra.CropAPI">
+        <methods>
+          <include name="teardown"/>
+          <include name="Test142_validateCropData"/>
+          <include name="destroy"/>
+          <include name="Test150_validateCropData"/>
+          <include name="Test129_validateCropData"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- api.mahindra.CropAPI -->
+      <class name="api.mahindra.LoginAPI">
+        <methods>
+          <include name="teardown"/>
+          <include name="destroy"/>
+          <include name="Test15_InvalidLogin"/>
+          <include name="Test14_InvalidLogin"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- api.mahindra.LoginAPI -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

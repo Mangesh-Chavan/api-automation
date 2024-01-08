@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.mahindra.loginAPI">
+      <class name="api.mahindra.Season">
         <methods>
-          <include name="Test15_InvalidLogin"/>
           <include name="teardown"/>
           <include name="destroy"/>
-          <include name="Test14_InvalidLogin"/>
+          <include name="Test549_validateSeasonData"/>
           <include name="init"/>
         </methods>
-      </class> <!-- api.mahindra.loginAPI -->
+      </class> <!-- api.mahindra.Season -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

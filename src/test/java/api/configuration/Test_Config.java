@@ -1,13 +1,12 @@
 package api.configuration;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.Random;
 
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -18,7 +17,6 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Test_Config {
@@ -31,7 +29,37 @@ public static ExtentReports extentReports;
 	
 	public static Response response;
 	
-	public static String accessToken;
+	public static String apiURL;
+	
+	public static String accessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVuaXF1ZV9uYW1lIjoiNjlhZTM5NmMtOTg2NS00OTllLTllZmQtODJkM2JmMTNjZjlhIiwiYWN0b3J0IjoiMCIsIm5iZiI6MTcwNDY5NTc2OSwiZXhwIjoxNzA1OTkxNzY5LCJpYXQiOjE3MDQ2OTU3NjksImlzcyI6Imh0dHA6Ly93d3cuc2VjdXJpdHkub3JnIiwiYXVkIjoiaHR0cDovL3d3dy5zZWN1cml0eS5vcmcifQ.FSl2pqc7X0GfMBIWHgkAL66PUMyHycIT_mlzA4OVhOk";
+	
+	public static String email;
+	
+	public static long mobile;
+	
+	public static String name;
+	
+	public static String setEmail() {
+		email = name + "@yopmail.com";
+		return email;
+	}
+	
+	public static String setName() {
+		Random random = new Random();
+		
+		name = "Test"+ random.nextInt(99);
+		return name;
+	}
+	
+	public static long setMobile() {
+		Random random = new Random();
+        long min = 1000000000L; // Minimum value for a 10-digit number
+        long max = 9999999999L; // Maximum value for a 10-digit number
+        mobile = random.longs(min, max + 1).findFirst().getAsLong();
+        return mobile;
+	}
+	
+	
 	
 	@BeforeTest
 	public void init() {
@@ -42,29 +70,6 @@ public static ExtentReports extentReports;
 		extentReports.attachReporter(extentSparkReporter);
 	}
 	
-	@BeforeMethod
-	public void Test16_validLogin() {
-		//extentTest = extentReports.createTest("valid email id & valid pwd");
-		HashMap<String, String> parameterValues = new HashMap<String,String>();
-		parameterValues.put("userName", "admin@admin.com");
-		parameterValues.put("password", "Admin@123");
-
-		response = RestAssured.given()
-				.contentType("application/json")
-				.body(parameterValues)
-				
-				
-			.when()
-				.post("https://mahindraapi.antllp.com/api/v1.0/Login");
-		
-		response.then()
-		.statusCode(200)
-		.extract()
-        .response();
-
-		accessToken = response.jsonPath().getString("access_token");
-	}
-	
 	@AfterMethod
 	public void teardown(ITestResult result, ITestContext context) throws IOException {
 		extentTest.assignCategory(result.getTestClass().getName());
@@ -72,6 +77,7 @@ public static ExtentReports extentReports;
 		{
 			extentTest.log(Status.FAIL, result.getName() + " Failed");// to add name in report
 			extentTest.info(result.getThrowable().getLocalizedMessage());// to add responce in repor
+			extentTest.info("URL is " + apiURL);
 			extentTest.info("Status Code is " + response.then().extract().response().getStatusCode());
 			extentTest.info(MarkupHelper.createCodeBlock(response.then().extract().asString(),CodeLanguage.JSON));
 		}
@@ -84,6 +90,7 @@ public static ExtentReports extentReports;
 			extentTest.log(Status.PASS, result.getName() + " Passed");
 //			String jsonData = response.then().extract().jsonPath().toString();
 //			extentTest.info(response.then().extract().response().getContentType());
+			extentTest.info("URL is " + apiURL);
 			extentTest.info("Status Code is " + response.then().extract().response().getStatusCode());
 			extentTest.info(MarkupHelper.createCodeBlock(response.then().extract().asString(),CodeLanguage.JSON));
 			
