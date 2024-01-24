@@ -11,7 +11,7 @@ public class LoginAPI extends Test_Config{
 	
 
 	@Test
-	public void Test10_ValidateWebsite() {
+	public void Test01_ValidateWebsite() {
 		extentTest = extentReports.createTest("Validate Server Avaibility");
 		apiURL="https://mahindraapi.antllp.com/";
 		response =RestAssured
@@ -22,7 +22,7 @@ public class LoginAPI extends Test_Config{
 	}
 	
 	@Test
-	public void Test11_InvalidLogin() {
+	public void Test02_InvalidLogin() {
 		extentTest = extentReports.createTest("When Passing Inputs as Null");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();
@@ -47,7 +47,7 @@ public class LoginAPI extends Test_Config{
 	}
 	
 	@Test
-	public void Test12_InvalidLogin1() {
+	public void Test03_InvalidLogin1() {
 		extentTest = extentReports.createTest("Enter valid email and blank pwd");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();
@@ -68,7 +68,7 @@ public class LoginAPI extends Test_Config{
 	}
 	
 	@Test
-	public void Test13_InvalidLogin() {
+	public void Test04_InvalidLogin() {
 		extentTest = extentReports.createTest("Enter blank email and valid pwd");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();
@@ -93,7 +93,7 @@ public class LoginAPI extends Test_Config{
 	}
 	
 	@Test
-	public void Test14_InvalidLogin() {
+	public void Test05_InvalidLogin() {
 		extentTest = extentReports.createTest("Invalid email and valid password");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();
@@ -119,7 +119,7 @@ public class LoginAPI extends Test_Config{
 	
 	
 	@Test
-	public void Test15_InvalidLogin() {
+	public void Test06_InvalidLogin() {
 		extentTest = extentReports.createTest("Valid email id & invalid pwd");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();
@@ -144,7 +144,7 @@ public class LoginAPI extends Test_Config{
 	}
 	
 	@Test
-	public void Test16_validLogin() {
+	public void Test07_validLogin() {
 		extentTest = extentReports.createTest("valid email id & valid pwd");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/Login";
 		HashMap<String, String> parameterValues = new HashMap<String,String>();

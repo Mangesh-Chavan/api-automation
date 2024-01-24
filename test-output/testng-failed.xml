@@ -5,57 +5,134 @@
     <classes>
       <class name="api.mahindra.AddUser">
         <methods>
-          <include name="Test625_validateAddUser"/>
+          <include name="Test03_validateAddUser"/>
+          <include name="Test04_validateAddUser"/>
           <include name="teardown"/>
-          <include name="Test630_validateAddUser"/>
-          <include name="Test629_validateAddUser"/>
+          <include name="Test18_validateAddUser"/>
+          <include name="Test01_validateAddUser"/>
+          <include name="Test25_validateAddUser"/>
+          <include name="Test10_validateAddUser"/>
+          <include name="Test05_validateAddUser"/>
+          <include name="Test14_validateAddUser"/>
+          <include name="Test09_validateAddUser"/>
+          <include name="Test20_validateAddUser"/>
+          <include name="Test13_validateAddUser"/>
+          <include name="Test08_validateAddUser"/>
+          <include name="Test22_validateAddUser"/>
           <include name="destroy"/>
-          <include name="Test632_validateAddUser"/>
-          <include name="Test628_validateAddUser"/>
-          <include name="Test631_validateAddUser"/>
+          <include name="Test11_validateAddUser"/>
           <include name="init"/>
+          <include name="Test19_validateAddUser"/>
+          <include name="Test23_validateAddUser"/>
+          <include name="Test06_validateAddUser"/>
+          <include name="Test07_validateAddUser"/>
         </methods>
       </class> <!-- api.mahindra.AddUser -->
       <class name="api.mahindra.Season">
         <methods>
-          <include name="Test558_validateSeasonData"/>
-          <include name="Test498_validateSeasonData"/>
-          <include name="Test533_validateSeasonData"/>
+          <include name="Test14_validateSeasonData"/>
           <include name="teardown"/>
-          <include name="Test546_validateSeasonData"/>
-          <include name="Test554_validateSeasonData"/>
-          <include name="Test549_validateSeasonData"/>
-          <include name="Test509_validateSeasonData"/>
-          <include name="Test527_validateSeasonData"/>
-          <include name="Test521_validateSeasonData"/>
+          <include name="Test13_validateSeasonData"/>
+          <include name="Test10_validateSeasonData"/>
+          <include name="Test15_validateSeasonData"/>
+          <include name="Test02_validateSeasonData"/>
+          <include name="Test06_validateSeasonData"/>
+          <include name="Test03_validateSeasonData"/>
+          <include name="Test20_validateSeasonData"/>
+          <include name="Test04_validateSeasonData"/>
+          <include name="Test17_validateSeasonData"/>
+          <include name="Test16_validateSeasonData"/>
+          <include name="Test08_validateSeasonData"/>
           <include name="destroy"/>
-          <include name="Test539_validateSeasonData"/>
-          <include name="Test555_validateSeasonData"/>
-          <include name="Test540_validateSeasonData"/>
-          <include name="Test503_validateSeasonData"/>
+          <include name="Test07_validateSeasonData"/>
+          <include name="Test12_validateSeasonData"/>
           <include name="init"/>
         </methods>
       </class> <!-- api.mahindra.Season -->
+      <class name="api.mahindra.DealerAPI">
+        <methods>
+          <include name="Test02_validateDealerData"/>
+          <include name="Test01_validateDealerData"/>
+          <include name="teardown"/>
+          <include name="Test14_validateDealerData"/>
+          <include name="Test13_validateDealerData"/>
+          <include name="Test17_validateDealerData"/>
+          <include name="Test03_validateDealerData"/>
+          <include name="Test09_validateDealerData"/>
+          <include name="Test04_validateDealerData"/>
+          <include name="Test06_validateDealerData"/>
+          <include name="Test08_validateDealerData"/>
+          <include name="Test22_validateDealerData"/>
+          <include name="Test07_validateDealerData"/>
+          <include name="Test18_validateDealerData"/>
+          <include name="Test05_validateDealerData"/>
+          <include name="destroy"/>
+          <include name="Test20_validateDealerData"/>
+          <include name="Test11_validateDealerData"/>
+          <include name="Test23_validateDealerData"/>
+          <include name="Test16_validateDealerData"/>
+          <include name="Test25_validateDealerData"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- api.mahindra.DealerAPI -->
+      <class name="api.mahindra.UDC">
+        <methods>
+          <include name="Test11_validateUDCData"/>
+          <include name="teardown"/>
+          <include name="Test03_validateUDCData"/>
+          <include name="Test31_validateUDCData"/>
+          <include name="Test01_validateUDCData"/>
+          <include name="Test17_validateUDCData"/>
+          <include name="Test04_validateUDCData"/>
+          <include name="Test19_validateUDCData"/>
+          <include name="Test05_validateUDCData"/>
+          <include name="Test08_validateUDCData"/>
+          <include name="Test15_validateUDCData"/>
+          <include name="Test16_validateUDCData"/>
+          <include name="Test23_validateUDCData"/>
+          <include name="Test07_validateUDCData"/>
+          <include name="Test21_validateUDCData"/>
+          <include name="Test27_validateUDCData"/>
+          <include name="Test13_validateUDCData"/>
+          <include name="destroy"/>
+          <include name="Test29_validateUDCData"/>
+          <include name="Test06_validateUDCData"/>
+          <include name="Test25_validateUDCData"/>
+          <include name="init"/>
+          <include name="Test09_validateUDCData"/>
+          <include name="Test02_validateUDCData"/>
+        </methods>
+      </class> <!-- api.mahindra.UDC -->
       <class name="api.mahindra.LoginAPI">
         <methods>
           <include name="teardown"/>
           <include name="destroy"/>
-          <include name="Test15_InvalidLogin"/>
-          <include name="Test14_InvalidLogin"/>
+          <include name="Test06_InvalidLogin"/>
+          <include name="Test05_InvalidLogin"/>
           <include name="init"/>
         </methods>
       </class> <!-- api.mahindra.LoginAPI -->
       <class name="api.mahindra.CropAPI">
         <methods>
+          <include name="Test25_validateCropData"/>
           <include name="teardown"/>
-          <include name="Test142_validateCropData"/>
-          <include name="Test135_validateCropData"/>
-          <include name="Test130_validateCropData"/>
+          <include name="Test04_validateCropData"/>
+          <include name="Test21_validateCropData"/>
+          <include name="Test09_validateCropData"/>
+          <include name="Test15_validateCropData"/>
+          <include name="Test03_validateCropData"/>
+          <include name="Test11_validateCropData"/>
+          <include name="Test13_validateCropData"/>
+          <include name="Test17_validateCropData"/>
+          <include name="Test24_validateCropData"/>
+          <include name="Test06_validateCropData"/>
+          <include name="Test20_validateCropData"/>
+          <include name="Test19_validateCropData"/>
+          <include name="Test22_validateCropData"/>
           <include name="destroy"/>
-          <include name="Test150_validateCropData"/>
-          <include name="Test129_validateCropData"/>
-          <include name="Test146_validateCropData"/>
+          <include name="Test18_validateCropData"/>
           <include name="init"/>
+          <include name="Test10_validateCropData"/>
         </methods>
       </class> <!-- api.mahindra.CropAPI -->
     </classes>

@@ -1,6 +1,5 @@
 package api.mahindra;
 
-import static org.hamcrest.CoreMatchers.both;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 import java.util.HashMap;
@@ -15,7 +14,7 @@ public class Season extends Test_Config{
 	public String id="b14ba15d-4b48-46ba-92e2-0093924a4eec";
 	
 	@Test
-	public void Test497_validateSeasonData() {
+	public void Test01_validateSeasonData() {
 		extentTest = extentReports.createTest("When enter null value and execute ");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -38,7 +37,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test498_validateSeasonData() {
+	public void Test02_validateSeasonData() {
 		extentTest = extentReports.createTest("When enter data without authorisation");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -57,11 +56,12 @@ public class Season extends Test_Config{
 				.post(apiURL);
 		
 		response.then()
-		.statusCode(401);
+		.statusCode(401)
+		.body("message", equalTo("Unauthorized"));
 	}
 	
 	@Test
-	public void Test503_validateSeasonData() {
+	public void Test03_validateSeasonData() {
 		extentTest = extentReports.createTest("when enter name and FY data invalid");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -84,7 +84,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test509_validateSeasonData() {
+	public void Test04_validateSeasonData() {
 		extentTest = extentReports.createTest("when enter valid name and FY, is active-False");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -102,15 +102,17 @@ public class Season extends Test_Config{
 			.when()
 				.post(apiURL);
 		
+		id = response.jsonPath().getString("data.id");
+		System.out.println(id);
+		
 		response.then()
 		.statusCode(201);
 		
-		id = response.jsonPath().getString("data.id");
-		System.out.println(id);
+		
 	}
 	
 	@Test
-	public void Test515_validateSeasonData() {
+	public void Test05_validateSeasonData() {
 		extentTest = extentReports.createTest("when we pass start and end date as null");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -133,7 +135,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test521_validateSeasonData() {
+	public void Test06_validateSeasonData() {
 		extentTest = extentReports.createTest("when entered end date is before start date");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -156,7 +158,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test527_validateSeasonData() {
+	public void Test07_validateSeasonData() {
 		extentTest = extentReports.createTest("when entered is active status as null");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/AddSeason";
 		HashMap parameterValues = new HashMap();
@@ -179,7 +181,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test533_validateSeasonData() {
+	public void Test08_validateSeasonData() {
 		extentTest = extentReports.createTest("when entered value and execute without authorisation");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/UpdateSeason";
 		HashMap parameterValues = new HashMap();
@@ -198,11 +200,12 @@ public class Season extends Test_Config{
 				.put(apiURL);
 		
 		response.then()
-		.statusCode(401);
+		.statusCode(401)
+		.body("message", equalTo("Unauthorized"));
 	}
 	
 	@Test
-	public void Test534_validateSeasonData() {
+	public void Test09_validateSeasonData() {
 		extentTest = extentReports.createTest("when enter null value and execute");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/UpdateSeason";
 		HashMap parameterValues = new HashMap();
@@ -225,7 +228,7 @@ public class Season extends Test_Config{
 	}
 
 	@Test
-	public void Test539_validateSeasonData() {
+	public void Test10_validateSeasonData() {
 		extentTest = extentReports.createTest("when enter all value and execute");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/UpdateSeason";
 		HashMap parameterValues = new HashMap();
@@ -249,7 +252,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test540_validateSeasonData() {
+	public void Test11_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered dates are diffrent from chosen financial year and FY is diffrent that preferred");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/UpdateSeason";
 		HashMap parameterValues = new HashMap();
@@ -273,7 +276,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test546_validateSeasonData() {
+	public void Test12_validateSeasonData() {
 		extentTest = extentReports.createTest("When deleted without authorization");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/DeleteSeason";
 		HashMap parameterValues = new HashMap();
@@ -288,11 +291,12 @@ public class Season extends Test_Config{
 				.get(apiURL);
 		
 		response.then()
-		.statusCode(401);
+		.statusCode(401)
+		.body("message", equalTo("Unauthorized"));
 	}
 	
 	@Test
-	public void Test547_validateSeasonData() {
+	public void Test13_validateSeasonData() {
 		extentTest = extentReports.createTest("When deleted with authorization");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/DeleteSeason";
 		HashMap parameterValues = new HashMap();
@@ -311,7 +315,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test549_validateSeasonData() {
+	public void Test14_validateSeasonData() {
 		extentTest = extentReports.createTest("When get record without authorization");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetSeasonById";
 		HashMap parameterValues = new HashMap();
@@ -326,12 +330,13 @@ public class Season extends Test_Config{
 				.get(apiURL);
 		
 		response.then()
-		.statusCode(401);
+		.statusCode(401)
+		.body("message", equalTo("Unauthorized"));
 		
 	}
 	
 	@Test
-	public void Test550_validateSeasonData() {
+	public void Test15_validateSeasonData() {
 		extentTest = extentReports.createTest("When get record with authorization");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetSeasonById";
 		HashMap parameterValues = new HashMap();
@@ -351,7 +356,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test554_validateSeasonData() {
+	public void Test16_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered values without autorization");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetAllSeasons";
 		HashMap parameterValues = new HashMap();
@@ -369,11 +374,12 @@ public class Season extends Test_Config{
 				.post(apiURL);
 		
 		response.then()
-		.statusCode(401);
+		.statusCode(401)
+		.body("message", equalTo("Unauthorized"));
 	}
 	
 	@Test
-	public void Test555_validateSeasonData() {
+	public void Test17_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered pagesize 0 page Number 0");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetAllSeasons";
 		HashMap parameterValues = new HashMap();
@@ -395,7 +401,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test556_validateSeasonData() {
+	public void Test18_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered all data as null");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetAllSeasons";
 		HashMap parameterValues = new HashMap();
@@ -417,7 +423,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test557_validateSeasonData() {
+	public void Test19_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered all valid values");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetAllSeasons";
 		HashMap parameterValues = new HashMap();
@@ -439,7 +445,7 @@ public class Season extends Test_Config{
 	}
 	
 	@Test
-	public void Test558_validateSeasonData() {
+	public void Test20_validateSeasonData() {
 		extentTest = extentReports.createTest("When entered all invalid values");
 		apiURL="https://mahindraapi.antllp.com/api/v1.0/GetAllSeasons";
 		HashMap parameterValues = new HashMap();

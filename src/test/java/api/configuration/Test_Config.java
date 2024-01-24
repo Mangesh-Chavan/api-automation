@@ -17,6 +17,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Test_Config {
@@ -31,7 +32,7 @@ public static ExtentReports extentReports;
 	
 	public static String apiURL;
 	
-	public static String accessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVuaXF1ZV9uYW1lIjoiNjlhZTM5NmMtOTg2NS00OTllLTllZmQtODJkM2JmMTNjZjlhIiwiYWN0b3J0IjoiMCIsIm5iZiI6MTcwNDY5NTc2OSwiZXhwIjoxNzA1OTkxNzY5LCJpYXQiOjE3MDQ2OTU3NjksImlzcyI6Imh0dHA6Ly93d3cuc2VjdXJpdHkub3JnIiwiYXVkIjoiaHR0cDovL3d3dy5zZWN1cml0eS5vcmcifQ.FSl2pqc7X0GfMBIWHgkAL66PUMyHycIT_mlzA4OVhOk";
+	public static String accessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVuaXF1ZV9uYW1lIjoiNjlhZTM5NmMtOTg2NS00OTllLTllZmQtODJkM2JmMTNjZjlhIiwiYWN0b3J0IjoiMCIsIm5iZiI6MTcwNDg3MDc2NSwiZXhwIjoxNzA2MTY2NzY1LCJpYXQiOjE3MDQ4NzA3NjUsImlzcyI6Imh0dHA6Ly93d3cuc2VjdXJpdHkub3JnIiwiYXVkIjoiaHR0cDovL3d3dy5zZWN1cml0eS5vcmcifQ.6WC5rSyeC4i-pBgG3XnlJwO50SHndoRYPJ2Ttrx_iRo";
 	
 	public static String email;
 	
@@ -63,6 +64,7 @@ public static ExtentReports extentReports;
 	
 	@BeforeTest
 	public void init() {
+		RestAssured.baseURI="https://mahindraapi.antllp.com/api/v1.0";
 		extentReports = new ExtentReports();
 		extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"./reports/report.html");
 		extentSparkReporter.config().setTheme(Theme.DARK);
@@ -77,7 +79,7 @@ public static ExtentReports extentReports;
 		{
 			extentTest.log(Status.FAIL, result.getName() + " Failed");// to add name in report
 			extentTest.info(result.getThrowable().getLocalizedMessage());// to add responce in repor
-			extentTest.info("URL is " + apiURL);
+			extentTest.info(RestAssured.baseURI+apiURL);
 			extentTest.info("Status Code is " + response.then().extract().response().getStatusCode());
 			extentTest.info(MarkupHelper.createCodeBlock(response.then().extract().asString(),CodeLanguage.JSON));
 		}
@@ -90,7 +92,7 @@ public static ExtentReports extentReports;
 			extentTest.log(Status.PASS, result.getName() + " Passed");
 //			String jsonData = response.then().extract().jsonPath().toString();
 //			extentTest.info(response.then().extract().response().getContentType());
-			extentTest.info("URL is " + apiURL);
+			extentTest.info(RestAssured.baseURI+apiURL);
 			extentTest.info("Status Code is " + response.then().extract().response().getStatusCode());
 			extentTest.info(MarkupHelper.createCodeBlock(response.then().extract().asString(),CodeLanguage.JSON));
 			
